@@ -14,6 +14,9 @@ class netflavClass extends WebApiBase {
             backData.data = [
                 { type_id: '/censored', type_name: '有碼影片' },
                 { type_id: '/uncensored', type_name: '無碼影片' },
+                { type_id: '/chinese-sub', type_name: '中文字幕' },
+                { type_id: '/genre', type_name: '分类' },
+                { type_id: '/actress', type_name: '女优' },
             ]
         } catch (e) {
             backData.error = e.message
