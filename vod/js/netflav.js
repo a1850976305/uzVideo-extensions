@@ -28,7 +28,7 @@ class netflavClass extends WebApiBase {
     async getVideoList(args) {
         let backData = new RepVideoList()
         try {
-            const type = args.url === '/censored' ? 'censored' : 'uncensored'
+            const type = args.url === '/censored' ? 'censored' : 'uncensored': 'chinese-sub': 'genre': 'actress'
             const url = this.webSite + args.url + `?page=${args.page}`
             const pro = await req(url, { headers: { 'User-Agent': this.UA } })
             backData.error = pro.error
